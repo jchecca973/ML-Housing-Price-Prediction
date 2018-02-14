@@ -16,31 +16,48 @@ the price. Let’s say there are K attributes. We can represent the attributes f
 training data as a Nx(K + 1) matrix as follows, which we call X:
 
 [
+
 1, x(0,1) , x(0,2) , x(0,3) , x(0,4)
+
 1, x(1,1) , x(1,2) , x(1,3) , x(1,4)
+
 1, x(2,1) , x(2,2) , x(2,3) , x(2,4)
+
 1, x(3,1) , x(3,2) , x(3,3) , x(3,4)
+
 ..
+
 1, x(n,1) , x(n,2) , x(n,3) , x(n,4)
+
 ]
 
 where n is N − 1. We can represent the prices of the house from the examples in the training data
 as a Nx1 matrix, which we call Y .
 
 [
+
 y0
+
 y1
+
 ..
+
 yn
+
 ]
 
 Similarly, we can represent the weights for each attribute as a (K + 1)x1 matrix, which we call W.
 
 [
+
 w0
+
 w1
+
 ..
+
 wk
+
 ]
 
 The goal of this machine learning algorithm is to learn this matrix from the training data.
@@ -67,11 +84,20 @@ value in the line represents the price of the house.
 An example training data file (train1.txt) is shown below:
 
 4
+
 7
+
 3.000000,1.000000,1180.000000,1955.000000,221900.000000
+
 3.000000,2.250000,2570.000000,1951.000000,538000.000000
+
 2.000000,1.000000,770.000000,1933.000000,180000.000000
+
 4.000000,3.000000,1960.000000,1965.000000,604000.000000
+
 3.000000,2.000000,1680.000000,1987.000000,510000.000000
+
 4.000000,4.500000,5420.000000,2001.000000,1230000.000000
+
 3.000000,2.250000,1715.000000,1995.000000,257500.000000
+
