@@ -1,4 +1,5 @@
 # ML-Housing-Price-Prediction
+
 This is an implementation of a simple machine learning algorithm to
 predict house prices based on historical data.
 For example, the price of the house (y) can depend on certain attributes of the house: number of
@@ -53,3 +54,24 @@ Using the training data, we can learn the weights using the below equation:
 W = (XT.X)^(−1).XT.Y
 
 where XT is the transpose of the matrix X, and (XT.X)^(−1) is the inverse of the matrix XT.X.
+
+# Structure of the training data file
+
+The first line in the training file is an integer that provides the number of attributes (K) in the
+training set. The second line in the training data file is an integer (N) providing the number of
+training examples in the training data set. The next N lines represent the N training examples. Each
+line for the example will be a list of comma-separated double precision floating point values. The first
+K double precision values represent the values for the attributes of the house. The last double precision
+value in the line represents the price of the house.
+
+An example training data file (train1.txt) is shown below:
+
+4
+7
+3.000000,1.000000,1180.000000,1955.000000,221900.000000
+3.000000,2.250000,2570.000000,1951.000000,538000.000000
+2.000000,1.000000,770.000000,1933.000000,180000.000000
+4.000000,3.000000,1960.000000,1965.000000,604000.000000
+3.000000,2.000000,1680.000000,1987.000000,510000.000000
+4.000000,4.500000,5420.000000,2001.000000,1230000.000000
+3.000000,2.250000,1715.000000,1995.000000,257500.000000
