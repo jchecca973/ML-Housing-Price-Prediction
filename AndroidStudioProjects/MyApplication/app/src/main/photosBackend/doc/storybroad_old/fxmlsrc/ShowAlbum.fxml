@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="22.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Showing Album " wrappingWidth="251.783203125">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Button layoutX="19.0" layoutY="58.0" mnemonicParsing="false" text="Add Selected Photo" />
+      <Button layoutX="454.0" layoutY="58.0" mnemonicParsing="false" text="Remove Selected Photo" />
+      <Button layoutX="217.0" layoutY="58.0" mnemonicParsing="false" text="Caption/recaption a photo" />
+      <Button layoutX="281.0" layoutY="20.0" mnemonicParsing="false" text="Back to Home" />
+      <Button layoutX="470.0" layoutY="20.0" mnemonicParsing="false" text="Logtout" />
+      <Button layoutX="614.0" layoutY="20.0" mnemonicParsing="false" text="Quit" />
+      <Button layoutX="553.0" layoutY="97.0" mnemonicParsing="false" text="Add/Delete a tag" />
+      <ImageView fitHeight="317.0" fitWidth="393.0" layoutX="306.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true" />
+      <Text layoutX="397.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Image View Area" wrappingWidth="114.4130859375" />
+      <ListView layoutX="-1.0" layoutY="137.0" prefHeight="464.0" prefWidth="311.0" />
+      <Button layoutX="22.0" layoutY="97.0" mnemonicParsing="false" text="Copy Selected Photo to other album" />
+      <Button layoutX="291.0" layoutY="97.0" mnemonicParsing="false" text="Move Selected Photo to other album" />
+      <Text layoutX="349.0" layoutY="487.0" strokeType="OUTSIDE" strokeWidth="0.0" text="caption" />
+      <Text layoutX="349.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="date-time of capture" />
+      <Text layoutX="349.0" layoutY="559.0" strokeType="OUTSIDE" strokeWidth="0.0" text="tags" />
+      <Line endX="289.0" layoutX="411.0" layoutY="464.0" startX="-100.0" />
+      <Line endX="597.0" layoutX="102.0" layoutY="137.0" startX="-100.0" />
+      <TextField layoutX="412.0" layoutY="471.0" />
+      <TextField layoutX="496.0" layoutY="502.0" />
+      <TextField layoutX="392.0" layoutY="541.0" />
+   </children>
+</AnchorPane>

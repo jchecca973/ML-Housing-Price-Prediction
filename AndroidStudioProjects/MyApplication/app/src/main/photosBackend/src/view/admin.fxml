@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane  fx:controller="control.AdminController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="35.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Page" wrappingWidth="178.2060546875">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <ListView fx:id="listView" layoutX="-1.0" layoutY="77.0" prefHeight="323.0" prefWidth="289.0" />
+      <Text layoutX="14.0" layoutY="68.0" text="Listing Users" />
+      <Button onAction="#addUser" layoutX="406.0" layoutY="142.0" mnemonicParsing="false" text="Add User" />
+      <Button onAction="#deleteUser" layoutX="391.0" layoutY="304.0" mnemonicParsing="false" text="Delete User " />
+      <TextField fx:id="addingUsername"  layoutX="408.0" layoutY="63.0" />
+      <Text layoutX="314.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+      <Text layoutX="316.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="62.26416015625" />
+      <TextField  layoutX="408.0" layoutY="102.0" />
+      <TextField   fx:id="deleteUsername" layoutX="407.0" layoutY="233.0" />
+      <Text layoutX="313.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+      <Line endX="212.0" layoutX="388.0" layoutY="189.0" startX="-100.0" />
+      <Line endX="332.0" layoutX="268.0" layoutY="45.0" startX="-269.0" />
+      <Button onAction="#logout" layoutX="414.0" layoutY="10.0" mnemonicParsing="false" text="Logout" />
+      <Button onAction="#quit" layoutX="513.0" layoutY="10.0" mnemonicParsing="false" text="Quit" />
+   </children>
+</AnchorPane>

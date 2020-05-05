@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="452.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.SearchController">
+   <children>
+      <Text layoutX="16.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Results for: " wrappingWidth="299.81103515625">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <ListView layoutX="-1.0" layoutY="120.0" prefHeight="330.0" prefWidth="618.0" />
+      <TextField layoutX="20.0" layoutY="59.0" prefHeight="27.0" prefWidth="266.0" />
+      <Button layoutX="461.0" layoutY="11.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+      <Button layoutX="324.0" layoutY="46.0" mnemonicParsing="false" onAction="#toHomepage" prefHeight="27.0" prefWidth="167.0" text="Back to Homepage" />
+      <Button layoutX="324.0" layoutY="83.0" mnemonicParsing="false" text="Create an Album with the Search Results" />
+      <Line endX="-14.0" endY="48.0" layoutX="316.0" layoutY="74.0" startX="-14.0" startY="-71.0" />
+      <Button layoutX="537.0" layoutY="11.0" mnemonicParsing="false" onAction="#quit" text="Quit" />
+      <ListView layoutX="1.0" layoutY="120.0" prefHeight="330.0" prefWidth="252.0" />
+      <ImageView fitHeight="197.0" fitWidth="365.0" layoutX="253.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane layoutX="279.0" layoutY="341.0">
+         <children>
+            <Text layoutX="3.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="caption" />
+            <Text layoutX="1.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="date-time of capture" />
+            <Text layoutX="3.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="tags" />
+            <TextField layoutX="63.0" />
+            <TextField layoutX="147.0" layoutY="31.0" />
+            <TextField layoutX="43.0" layoutY="70.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
